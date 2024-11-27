@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Runner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #eaeaea;
+        }
+        #score-board {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        #last-score, #current-score {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="score-board">
+        Last Score: <span id="last-score">0</span> | Current Score: <span id="current-score">0</span>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="dinosaurRunner.js"></script>
+</body>
+</html>
