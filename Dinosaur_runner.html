@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosaur Runner</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -29,10 +30,13 @@
     </style>
 </head>
 <body>
-    <div id="score-board">
+    <div id="score-board" class="container text-white bg-dark p-2 rounded">
         Last Score: <span id="last-score">0</span> | Current Score: <span id="current-score">0</span>
     </div>
-    <canvas id="gameCanvas"></canvas>
+    <canvas id="gameCanvas"></canvas>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="dinosaurRunner.js"></script>
 </body>
 </html>
